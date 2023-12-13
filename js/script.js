@@ -35,6 +35,9 @@ createApp({
             else{
                 this.todoList[index].done = true
             }
+        },
+        remove(index){
+            this.todoList.splice(index,1);
         }
     }
 }).mount('#app');
