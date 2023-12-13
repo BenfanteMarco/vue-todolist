@@ -11,5 +11,32 @@ h1{
     border: 1px solid lightgrey;
     padding: 15px;
     border-radius: 10px;
-    width: 500 px;
+    width: 700px;
+}
+
+header{
+    background-color: rgb(200, 200, 200);
+    height: 120px;
+    border-bottom: 1px solid white;
+}
+
+main{
+    background-color: rgb(200, 200, 200);
+    height: calc(100vh - 120px);
+}
+
+.content-lis{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    width: 600px;
+}
+
+li{
+    padding: 15px 0;
+    border-bottom: 1px solid grey;
+    color: rgb(0, 0, 0);
 }

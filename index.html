@@ -22,7 +22,17 @@
             </div>
         </header>
         <main>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="content-list">
+                            <ul class="list-unstyled my-5">
+                                <li v-for="(todo, index) in todoList" :key="index">{{todo.text}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
