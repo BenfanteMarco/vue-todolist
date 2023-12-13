@@ -27,11 +27,11 @@
                     <div class="col-12 d-flex justify-content-center">
                         <div class="content-list">
                             <ul class="list-unstyled my-5">
-                                <li v-for="(todo, index) in todoList" :key="index" :class="todo.done == true ? 'text-decoration-line-through ' : ''">
-                                    <div class="d-flex justify-content-between">
+                                <li v-for="(todo, index) in todoList" :key="index" :class="todo.done == true ? 'text-decoration-line-through bg-check ' : ''">
+                                    <div class="d-flex justify-content-between px-3">
                                         <span>{{todo.text}}</span>
                                         <div class="buttons">
-                                            <button class="btn btn-sm btn-square" :class="todo.done == true ? 'btn-dark' : 'btn-light'"><i class="fa" :class="todo.done == true ? 'fa-times' : 'fa-check'"></i></button>
+                                            <button class="btn btn-sm btn-square" :class="todo.done == true ? 'btn-dark' : 'btn-light'" @click="toggleDone(index)"><i class="fa" :class="todo.done == true ? 'fa-times' : 'fa-check'"></i></button>
                                         </div>
                                     </div>
                                 </li>

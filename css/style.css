@@ -8,10 +8,10 @@ h1{
     text-decoration: underline;
     background-color: grey;
     color: white;
-    border: 1px solid lightgrey;
     padding: 15px;
     border-radius: 10px;
     width: 700px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header{
@@ -39,4 +39,9 @@ li{
     padding: 15px 0;
     border-bottom: 1px solid grey;
     color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.bg-check{
+    background-color: rgb(186, 186, 186);
 }
