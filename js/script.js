@@ -5,19 +5,24 @@ createApp({
         return{
             todoList: [
                 {
-                    text: 'fare colazione'
+                    text: 'fare colazione',
+                    done: true,
                 },
                 {
-                    text: 'studiare'
+                    text: 'studiare',
+                    done: true,
                 },
                 {
-                    text: 'andare in palestra'
+                    text: 'andare in palestra',
+                    done: false,
                 },
                 {
-                    text: 'esercitarsi'
+                    text: 'esercitarsi',
+                    done: false,
                 },
                 {
-                    text: 'riposare'
+                    text: 'riposare',
+                    done: false,
                 }
             ]
         }

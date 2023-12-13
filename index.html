@@ -27,7 +27,7 @@
                     <div class="col-12 d-flex justify-content-center">
                         <div class="content-list">
                             <ul class="list-unstyled my-5">
-                                <li v-for="(todo, index) in todoList" :key="index">{{todo.text}}</li>
+                                <li v-for="(todo, index) in todoList" :key="index" :class="todo.done == true ? 'text-decoration-line-through ' : ''">{{todo.text}}</li>
                             </ul>
                         </div>
                     </div>
