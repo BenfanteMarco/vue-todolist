@@ -3,6 +3,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            newTask: '',
             todoList: [
                 {
                     text: 'fare colazione',
@@ -36,8 +37,19 @@ createApp({
                 this.todoList[index].done = true
             }
         },
-        remove(index){
-            this.todoList.splice(index,1);
+        remove(index){ // per le confirm meglio le modali di bootstrap
+            let sureCheck = confirm('Sei sicuro?')
+            if(sureCheck == true){
+                this.todoList.splice(index,1);
+            }
+        },
+        add(){
+            let obj = {
+                text: this.newTask,
+                done: false
+            }
+            this.todoList.push(obj);
+            this.newTask = '';
         }
     }
 }).mount('#app');

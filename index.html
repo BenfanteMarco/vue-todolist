@@ -18,6 +18,10 @@
                             <h1>TODOLIST</h1>
                         </div>
                     </div>
+                    <div class="col-12 d-flex justify-content-center my-3">
+                        <input type="text" placeholder="Aggiungi" class="form-control input-add w-25" v-model="newTask">
+                        <button class="btn btn-sm btn-dark mx-2" @click="add">Salva</button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -42,6 +46,11 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="footer text-center">
+                <p><em>-By Marco.</em></p>
+            </div>
+        </footer>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
